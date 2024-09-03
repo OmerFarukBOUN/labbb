@@ -1,3 +1,3 @@
-/home/omerfaruk/CLionProjects/labbb/cmake-build-debug/CMakeFiles/labbb.dir
-/home/omerfaruk/CLionProjects/labbb/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/omerfaruk/CLionProjects/labbb/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug/CMakeFiles/labbb.dir
+/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug/CMakeFiles/rebuild_cache.dir

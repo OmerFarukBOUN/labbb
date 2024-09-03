@@ -14,7 +14,9 @@ RUN apt-get update && apt-get install -y \
     autoconf \
     libtool \
     flex \
-    bison
+    bison \
+    cmake \
+    gdb
 
 # Set an environment variable
 ENV CUDD_REVISION=release
@@ -26,8 +28,7 @@ RUN git clone --depth 1 --branch ${CUDD_REVISION} https://github.com/ivmai/cudd.
 
 RUN mkdir /test
 
-COPY /home/omerfaruk/OldPC/CLionProjects/labbb/test/cudd_test.c /test
-COPY /home/omerfaruk/OldPC/CLionProjects/labbb/test/CMakeLists.txt /test
+COPY test/* /test/
 
 # Change the working directory
 WORKDIR /cudd
@@ -36,7 +37,10 @@ RUN autoreconf -f -i
 
 # Configure, make, and install CUDD
 RUN ./configure --prefix=/opt/cudd/
+RUN ./configure --enable-dddmp --enable-obj --enable-shared --enable-static
 RUN make
 RUN make install
 
 WORKDIR /test
+
+RUN make

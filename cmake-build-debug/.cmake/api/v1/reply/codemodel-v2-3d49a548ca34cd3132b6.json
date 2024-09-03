@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/omerfaruk/CLionProjects/labbb/cmake-build-debug",
-		"source" : "/home/omerfaruk/CLionProjects/labbb"
+		"build" : "/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug",
+		"source" : "/home/omerfaruk/OldPC/CLionProjects/labbb"
 	},
 	"version" : 
 	{

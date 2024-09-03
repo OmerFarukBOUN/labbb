@@ -10,9 +10,12 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "cudd.h"
+#include <cudd.h>
 #include "Operations.h"
 #include <variant>
+#include <cstddef>
+
+using namespace std;
 
 
 enum Operator {

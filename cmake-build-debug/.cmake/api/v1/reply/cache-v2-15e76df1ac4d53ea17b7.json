@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/omerfaruk/CLionProjects/labbb/cmake-build-debug"
+			"value" : "/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/290/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/opt/clion/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/290/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/opt/clion/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/290/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/opt/clion/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omerfaruk/CLionProjects/labbb/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/omerfaruk/CLionProjects/labbb"
+			"value" : "/home/omerfaruk/OldPC/CLionProjects/labbb"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/290/bin/ninja/linux/x64/ninja"
+			"value" : "/opt/clion/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/290/bin/cmake/linux/x64/share/cmake-3.29"
+			"value" : "/opt/clion/bin/cmake/linux/x64/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1163,7 +1163,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omerfaruk/CLionProjects/labbb/cmake-build-debug"
+			"value" : "/home/omerfaruk/OldPC/CLionProjects/labbb/cmake-build-debug"
 		},
 		{
 			"name" : "labbb_IS_TOP_LEVEL",
@@ -1187,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omerfaruk/CLionProjects/labbb"
+			"value" : "/home/omerfaruk/OldPC/CLionProjects/labbb"
 		}
 	],
 	"kind" : "cache",

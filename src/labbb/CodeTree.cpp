@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 #include "cudd.h"
-#include "Operations.h"
+#include "include/labbb/Operations.h"
 #include <variant>
 #include "CodeTree.h"
 
@@ -24,4 +24,3 @@ size_t hash(std::initializer_list<int> list) {
 void* LTLNode::operator new(size_t size) {
     return malloc(size);
 }
-

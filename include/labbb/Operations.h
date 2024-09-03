@@ -5,7 +5,6 @@
 #ifndef LABBB_OPERATIONS_H
 #define LABBB_OPERATIONS_H
 
-#include "cudd.h"
 #include <iostream>
 #include <string>
 
