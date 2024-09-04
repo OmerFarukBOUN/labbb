@@ -32,7 +32,7 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && cd / && rm -rf /tmp/cudd
 
 
-ARG bruh=bruh1
+ARG bruh=bruh3
 
 # Clone this repository
 RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
