@@ -1,5 +1,4 @@
-#include "cudd.h"
-#include "util.h"
+#include <cudd.h>
 #include <stdio.h>
 
 int main() {

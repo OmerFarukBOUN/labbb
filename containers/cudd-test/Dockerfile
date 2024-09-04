@@ -19,25 +19,32 @@ RUN apt-get update && apt-get install -y \
     gdb
 
 # Set an environment variable
-ENV CUDD_REVISION=release
+#ENV CUDD_REVISION=release
 
 # Clone the CUDD repository
-RUN git clone --depth 1 --branch ${CUDD_REVISION} https://github.com/ivmai/cudd.git /cudd
+#RUN git clone --depth 1 --branch ${CUDD_REVISION} https://github.com/ivmai/cudd.git /cudd
+
+RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
+    && cd /tmp/cudd \
+    && ./configure && aclocal && autoconf \
+    && ./configure --enable-silent-rules --enable-shared --enable-obj \
+    && make && make install \
+    && cd / && rm -rf /tmp/cudd
 
 # Clone this repository
 RUN git clone --depth 1 https://github.com/OmerFarukBOUN/labbb.git /test
 
 
 # Change the working directory
-WORKDIR /cudd
+#WORKDIR /cudd
 
-RUN autoreconf -f -i
+#RUN autoreconf -f -i
 
 # Configure, make, and install CUDD
-RUN ./configure --prefix=/opt/cudd/
-RUN ./configure --enable-dddmp --enable-obj --enable-shared --enable-static
-RUN make
-RUN make install
+#RUN ./configure --prefix=/opt/cudd/ && aclocal && autoconf
+#RUN ./configure --enable-obj --enable-shared
+#RUN make
+#RUN make install
 
 WORKDIR /test/tests
 
