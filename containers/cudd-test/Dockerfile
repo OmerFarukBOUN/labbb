@@ -31,8 +31,11 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && make && make install \
     && cd / && rm -rf /tmp/cudd
 
+
+ARG bruh=bruh
+
 # Clone this repository
-RUN git clone --depth 1 https://github.com/OmerFarukBOUN/labbb.git /test
+RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
 
 
 # Change the working directory
