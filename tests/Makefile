@@ -1,13 +1,29 @@
+# Compiler
 CC = gcc
-CFLAGS = -Wall -g
-LDFLAGS = -lcudd -ldd -lmtr -lst -lutil -lpthread  # Link CUDD and dependencies
-INCLUDES = -I/usr/local/include  # Path to CUDD headers (adjust if necessary)
-LIBS = -L/usr/local/lib          # Path to CUDD libraries (adjust if necessary)
 
-all: cudd_test
+# Compiler flags
+CFLAGS = -I/usr/local/include -I/usr/include
 
-cudd_test: cudd_test.c
-	$(CC) $(CFLAGS) $(INCLUDES) cudd_test.c -o cudd_test $(LIBS) $(LDFLAGS)
+# Linker flags
+LDFLAGS = -L/usr/local/lib -lcudd -lm
 
+# Source files
+SRCS = cudd_test.c
+
+# Object files
+OBJS = $(SRCS:.c=.o)
+
+# Executable
+EXEC = cudd_test
+
+# Build the executable
+$(EXEC): $(OBJS)
+    $(CC) $(OBJS) -o $(EXEC) $(LDFLAGS)
+
+# Compile the source files
+%.o: %.c
+    $(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up
 clean:
-	rm -f cudd_test
+    rm -f $(OBJS) $(EXEC)
