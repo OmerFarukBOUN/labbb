@@ -21,12 +21,8 @@ RUN apt-get update && apt-get install -y \
     libbison-dev \
     neovim
 
-# Set an environment variable
-#ENV CUDD_REVISION=release
 
-# Clone the CUDD repository
-#RUN git clone --depth 1 --branch ${CUDD_REVISION} https://github.com/ivmai/cudd.git /cudd
-
+# Install CUDD
 RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && cd /tmp/cudd \
     && ./configure && aclocal && autoconf \
@@ -36,23 +32,11 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && ldconfig
 
 
-ARG bruh=bruh6
-
 # Clone this repository
 RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
 
-
-# Change the working directory
-#WORKDIR /cudd
-
-#RUN autoreconf -f -i
-
-# Configure, make, and install CUDD
-#RUN ./configure --prefix=/opt/cudd/ && aclocal && autoconf
-#RUN ./configure --enable-obj --enable-shared
-#RUN make
-#RUN make install
+# Set the working directory
 
 WORKDIR /test/tests
 
-#RUN make
+RUN make -s

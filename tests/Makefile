@@ -28,10 +28,10 @@ lex_yacc_test: src/lex_yacc_test.y src/lex_yacc_test.l
 check_output: check_cudd_test3 check_lex_yacc_test
 
 check_cudd_test3: build/cudd_test3 outputs/cudd_test3.txt
-    ./build/cudd_test3 > build/cudd_test3.txt
-    grep -v 'ID' build/cudd_test3.txt > build/cudd_test3_filtered.txt
-    grep -v 'ID' outputs/cudd_test3.txt > build/expected_cudd_test3_filtered.txt
-    diff build/cudd_test3_filtered.txt build/expected_cudd_test3_filtered.txt && echo "cudd_test3 output is correct" || echo "cudd_test3 output is incorrect"
+	./build/cudd_test3 > build/cudd_test3.txt
+	grep -v 'ID' build/cudd_test3.txt > build/cudd_test3_filtered.txt
+	grep -v 'ID' outputs/cudd_test3.txt > build/expected_cudd_test3_filtered.txt
+	diff build/cudd_test3_filtered.txt build/expected_cudd_test3_filtered.txt && echo "cudd_test3 output is correct" || echo "cudd_test3 output is incorrect"
 
 check_lex_yacc_test: build/lex_yacc_test outputs/lex_yacc_test.txt
 	printf "4+5\n(4*-5)\n(4-(-5))\n" | ./build/lex_yacc_test  > build/lex_yacc_test.txt
