@@ -1,0 +1,6 @@
+DdManager nodes: 4 | DdManager vars: 1 | DdManager reorderings: 0 | DdManager memory: 10523080 
+: 3 nodes 2 leaves 2 minterms
+ID =  0x2fac69d6eaa	index = 0	T = 1        	E =  0        
+
+1  1
+

@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y \
     flex \
     bison \
     cmake \
-    gdb
+    gdb \
+    neovim
 
 # Set an environment variable
 #ENV CUDD_REVISION=release
@@ -32,7 +33,7 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && cd / && rm -rf /tmp/cudd
 
 
-ARG bruh=bruh4
+ARG bruh=bruh5
 
 # Clone this repository
 RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
@@ -51,4 +52,4 @@ RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git
 
 WORKDIR /test/tests
 
-RUN make
+#RUN make
