@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y \
     bison \
     cmake \
     gdb \
+    libfl-dev \
+    libbison-dev \
     neovim
 
 # Set an environment variable
@@ -30,10 +32,11 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
     && ./configure && aclocal && autoconf \
     && ./configure --enable-silent-rules --enable-shared --enable-obj \
     && make && make install \
-    && cd / && rm -rf /tmp/cudd
+    && cd / && rm -rf /tmp/cudd \
+    && ldconfig
 
 
-ARG bruh=bruh5
+ARG bruh=bruh6
 
 # Clone this repository
 RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
