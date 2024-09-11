@@ -33,10 +33,10 @@ RUN git clone https://github.com/doganulus/cudd.git /tmp/cudd \
 
 
 # Clone this repository
-RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
+#RUN git clone --depth 1 --branch main https://github.com/OmerFarukBOUN/labbb.git /test
 
 # Set the working directory
 
-WORKDIR /test/tests
+#WORKDIR /test/tests
 
-RUN make -s
+#RUN make -s
